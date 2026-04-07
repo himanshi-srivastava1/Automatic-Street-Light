@@ -23,8 +23,8 @@ Traditional street lighting remains active throughout the night, leading to sign
 
 ## 💻 Software Implementation
 The system logic is written in **Embedded C** and follows a specific workflow:                        
-1. Read the analog/digital signal from the **LDR**. [cite: 91]
-2. Read digital inputs from multiple **IR sensors**. [cite: 92]
+1. Read the analog/digital signal from the **LDR**.                                
+2. Read digital inputs from multiple **IR sensors**.                                     
 3. Execute decision logic:
    ```c
    if (night && motion_detected) {
