@@ -1,15 +1,15 @@
 # Smart Automatic Street Light System using 8051
 
-[cite_start]An embedded automation project designed to improve energy efficiency in public lighting infrastructure by utilizing sensor-based decision-making. [cite: 70]
+An embedded automation project designed to improve energy efficiency in public lighting infrastructure by utilizing sensor-based decision-making. [cite: 70]
 
 ## 📌 Overview
-[cite_start]Traditional street lighting remains active throughout the night, leading to significant power wastage when no traffic is present. [cite: 74, 76] [cite_start]This project solves that problem by using an **AT89C51 microcontroller** to ensure lights only turn ON when it is dark **and** motion (vehicles or pedestrians) is detected. [cite: 77, 88]
+Traditional street lighting remains active throughout the night, leading to significant power wastage when no traffic is present. [cite: 74, 76]          This project solves that problem by using an **AT89C51 microcontroller** to ensure lights only turn ON when it is dark **and** motion (vehicles or pedestrians) is detected. [cite: 77, 88]
 
 ## 🚀 Key Features
-* [cite_start]**Dual-Condition Logic:** Lights activate only if the ambient light is low (Night) AND movement is sensed. [cite: 88, 94]
-* [cite_start]**Ambient Light Detection:** Uses an LDR sensor to distinguish between day and night. [cite: 76, 80]
-* [cite_start]**Traffic-Aware Sensing:** Integrated IR sensors monitor the presence of vehicles or pedestrians in real-time. [cite: 76, 82]
-* [cite_start]**High-Power Switching:** Utilizes 5V relays driven by BC547 transistors to safely control high-brightness LEDs. [cite: 86, 103]
+* **Dual-Condition Logic:** Lights activate only if the ambient light is low (Night) AND movement is sensed. [cite: 88, 94]
+* **Ambient Light Detection:** Uses an LDR sensor to distinguish between day and night. [cite: 76, 80]
+* **Traffic-Aware Sensing:** Integrated IR sensors monitor the presence of vehicles or pedestrians in real-time. [cite: 76, 82]
+* **High-Power Switching:** Utilizes 5V relays driven by BC547 transistors to safely control high-brightness LEDs. [cite: 86, 103]
 
 ## 🛠️ Hardware Components
 | Component | Quantity | Purpose |
@@ -22,9 +22,9 @@
 | **High-Brightness LEDs** | 6 | [cite_start]Represents the street light output. [cite: 104, 108] |
 
 ## 💻 Software Implementation
-[cite_start]The system logic is written in **Embedded C** and follows a specific workflow: [cite: 90]
-1. [cite_start]Read the analog/digital signal from the **LDR**. [cite: 91]
-2. [cite_start]Read digital inputs from multiple **IR sensors**. [cite: 92]
+The system logic is written in **Embedded C** and follows a specific workflow: [cite: 90]
+1. Read the analog/digital signal from the **LDR**. [cite: 91]
+2. Read digital inputs from multiple **IR sensors**. [cite: 92]
 3. Execute decision logic:
    ```c
    if (night && motion_detected) {
